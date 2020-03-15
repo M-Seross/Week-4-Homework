@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Portfolio website for week 2 homework">
+  <meta name="author" content="Matt">
+
+  <title>Portfolio: Matt</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="#">Matt Stejer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div id="highscores-row" class="row hide">
+      <section class="col-lg-8 content-box">
+        <h1>Highscores: Coding test</h1>
+        <p>The top 5 scores are shown here:</p>
+        <ol id="listHighscores"></ol>
+          <div class="controls">
+            <button id="reload-btn" class="btn-dark control" onClick="window.location.reload();">Return to start</button>
+          </div>
+      </section>
+    </div>
+    <div id="game-row" class="row">
+      <main class="col-lg-8 content-box">
+        <h1>The coding test</h1>
+        <div class="timer hide">Time remaining: <span id="time">01:00</span></div>
+
+          <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+              <button class="btn-dark">Answer 1</button>
+              <button class="btn-dark">Answer 2</button>
+              <button class="btn-dark">Answer 3</button>
+              <button class="btn-dark">Answer 4</button>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="start-btn" class="btn-dark control">Start</button>
+            <button id="next-btn" class="btn-dark control hide">Next</button>
+            <button id="end-btn" class="btn-dark control hide">View score</button>
+          </div>
+      </main>
+    </div>
+    <div id="feedback-row" class="row feedback-row">
+      <div id="correct-feedback" class="col-lg-8 content-box correct feedback hide">
+        <h1>Correct!</h1>
+        <p>You have gained one point!</p>
+      </div>
+      <div id="incorrect-feedback" class="col-lg-8 content-box incorrect feedback hide">
+        <h1>Not quite.</h1>
+        <p>You have lost 5 seconds from the clock.</p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+   
+  <!-- Quiz JavaScript -->
+  <script src="script.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ab5c9d436a.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
